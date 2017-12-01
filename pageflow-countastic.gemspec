@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'pageflow/counter/version'
+require 'pageflow/countastic/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "pageflow-counter"
-  spec.version       = Pageflow::Counter::VERSION
+  spec.name          = "pageflow-countastic"
+  spec.version       = Pageflow::Countastic::VERSION
   spec.authors       = ["Joost Baaij"]
   spec.email         = ["joost@spacebabies.nl"]
 

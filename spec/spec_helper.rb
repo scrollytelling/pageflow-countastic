@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "pageflow/counter"
+require "pageflow/countastic"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

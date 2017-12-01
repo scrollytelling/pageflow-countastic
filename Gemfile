@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in pageflow-counter.gemspec
+# Specify your gem's dependencies in pageflow-countastic.gemspec
 gemspec

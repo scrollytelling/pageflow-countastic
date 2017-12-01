@@ -1,8 +1,8 @@
 require "spec_helper"
 
-RSpec.describe Pageflow::Counter do
+RSpec.describe Pageflow::Countastic do
   it "has a version number" do
-    expect(Pageflow::Counter::VERSION).not_to be nil
+    expect(Pageflow::Countastic::VERSION).not_to be nil
   end
 
   it "does something useful" do
