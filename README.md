@@ -1,8 +1,9 @@
 # Pageflow::Countastic
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pageflow/countastic`. To experiment with that code, run `bin/console` for an interactive prompt.
+🌟 Plain boring numbers in your Pageflow story become animated 🌟
 
-TODO: Delete this and the text above, and describe your gem
+Contains `countUp.js` version 1.9.3
+
 
 ## Installation
 
@@ -16,13 +17,41 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+## Configuration
 
-    $ gem install pageflow-countastic
+Grab the old text editor and open your application's `config/initializers/pageflow.rb`:
 
-## Usage
+``` ruby
+Pageflow.configure do |config|
+  # Lots of other things in this file ...
+  config.plugin(Pageflow::Countastic.plugin)
 
-TODO: Write usage instructions here
+  # Probably lots of other things trailing as well ...
+end
+```
+
+Add it to the asset pipeline:
+
+``` javascript
+// in app/assets/javascripts/application.js:
+
+//= require pageflow/countastic
+```
+
+``` scss
+/* in app/assets/stylesheets/application.scss: */
+
+@import "pageflow/countastic";
+```
+
+``` css
+/* in app/assets/stylesheets/application.css: */
+/* also, get yourself checked for using sprockets here */
+
+/*
+*= require countastic
+*/
+```
 
 ## Development
 
@@ -32,4 +61,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/pageflow-countastic.
+Bug reports and pull requests are welcome on GitHub at https://github.com/scrollytelling/pageflow-countastic.

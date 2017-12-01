@@ -1,5 +1,8 @@
 require "bundler/setup"
-require "pageflow/countastic"
+
+Bundler.require :default, :development
+
+require "rspec/rails"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,3 +1,4 @@
+require "pageflow/countastic/engine"
 require "pageflow/countastic/plugin"
 require "pageflow/countastic/widget_type"
 
