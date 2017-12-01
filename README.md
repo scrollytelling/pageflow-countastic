@@ -1,4 +1,4 @@
-# Pageflow::Countastic
+# Countastic
 
 🌟 Plain boring numbers in your Pageflow story become animated 🌟
 
@@ -19,7 +19,7 @@ And then execute:
 
 ## Configuration
 
-Grab the old text editor and open your application's `config/initializers/pageflow.rb`:
+Grab yer ol' text editor and open `config/initializers/pageflow.rb`:
 
 ``` ruby
 Pageflow.configure do |config|
@@ -33,24 +33,26 @@ end
 Add it to the asset pipeline:
 
 ``` javascript
-// in app/assets/javascripts/application.js:
+// in app/assets/javascripts/pageflow/application.js:
 
 //= require pageflow/countastic
 ```
 
 ``` scss
-/* in app/assets/stylesheets/application.scss: */
+/* in app/assets/stylesheets/pageflow/application.scss: */
 
 @import "pageflow/countastic";
 ```
 
 ``` css
+/* or, if baby Jesus forbid, you're still using Sprockets */
 /* in app/assets/stylesheets/application.css: */
-/* also, get yourself checked for using sprockets here */
 
 /*
-*= require countastic
+*= require pageflow/countastic
 */
+
+/* also, get yourself checked for doing such a thing. */
 ```
 
 ## Development
