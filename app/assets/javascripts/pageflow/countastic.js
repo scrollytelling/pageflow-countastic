@@ -3,5 +3,5 @@
 //= require ./countastic/widget
 
 $(function() {
-  $('.page').countastic();
+  // $('.page').countastic();
 });

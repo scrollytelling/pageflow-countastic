@@ -10,6 +10,12 @@ module Pageflow
       def roles
         ['countastic']
       end
+
+      def render(template, entry)
+        template.render \
+          partial: 'pageflow/countastic/widget',
+          locals: {entry: entry}
+      end
     end
   end
 end
